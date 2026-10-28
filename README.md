@@ -56,3 +56,17 @@ Author
 Fajr318
 
 This project is part of my learning journey in Network and Communications Engineering.
+
+## What I Learned
+
+- Understanding IPv4 addresses and subnet prefixes.
+- Using Python's ipaddress standard library.
+- Validating user input with error handling.
+- Writing basic unit tests.
+- Organizing and documenting a project on GitHub.
+
+## Future Improvements
+
+- Add support for subnet masks as input.
+- Improve the user interface.
+- Expand test coverage for edge cases.
