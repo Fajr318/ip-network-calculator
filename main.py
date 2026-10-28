@@ -16,10 +16,12 @@ try:
     print("Prefix Length:", network.prefixlen)
     print("Total Addresses:", network.num_addresses)
 
-    if network.prefixlen <= 30:
-        print("Usable Hosts:", network.num_addresses - 2)
-    else:
-        print("Usable Hosts:", network.num_addresses)
+   if network.prefixlen <= 30:
+    print("Usable Hosts:", network.num_addresses - 2)
+elif network.prefixlen == 31:
+    print("Usable Hosts: 2 (point-to-point network)")
+else:
+    print("Usable Hosts: 1 (single IP address)")
 
 except ValueError:
     print("Invalid IP address or subnet prefix.")
